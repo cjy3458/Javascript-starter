@@ -1,5 +1,5 @@
-function sayHello() {
-    console.log("Hello I'm Jay");
+function sayHello(personName, age) {
+    console.log("Hi, my name is " + personName + "and I'm " + age);
 }
 
-sayHello();
+sayHello("Jay", 25);
