@@ -22,3 +22,25 @@ const player = {
 
 console.log(player.name);
 player.sayHi(player.name);
+
+
+/*니콜라스 과제*/
+const calculator = {
+    add: function(a, b){
+        console.log(a+b);
+    },
+    minus: function(a, b){
+        console.log(a-b);
+    },
+    divide: function(a, b){
+        console.log(a/b);
+    },
+    square: function(a, b){
+        console.log(a**b);
+    }
+}
+
+calculator.add(1, 2);
+calculator.minus(2, 1);
+calculator.divide(4, 2);
+calculator.square(9, 2);
