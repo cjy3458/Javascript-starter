@@ -14,7 +14,7 @@ const calculator = {
     square: function(a, b){
         return a**b;
     }
-}
+} /*return하는 순간 함수는 종료!*/
 
 const plusR = calculator.add(1, 2);
 const minusR = calculator.minus(2, 1);
