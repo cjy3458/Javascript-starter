@@ -10,6 +10,8 @@ isNaN(typeof age); /*NaN인지 아닌지 확인하는 과정*/
 /*boolean으로 if문 안에 조건을 작성*/
 if(isNaN(age)) {
     alert("Write the Number!");
+} else if(age < 18){
+    alert("You are yoo young...");
 } else {
-    alert(age)
+    alert("You can Smoke!");
 }
