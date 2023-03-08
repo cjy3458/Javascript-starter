@@ -32,6 +32,9 @@ const calculator = {
     minus: function(a, b){
         console.log(a-b);
     },
+    times: function (a, b){
+        console.log(a * b);
+    },
     divide: function(a, b){
         console.log(a/b);
     },
@@ -44,3 +47,4 @@ calculator.add(1, 2);
 calculator.minus(2, 1);
 calculator.divide(4, 2);
 calculator.square(9, 2);
+calculator.times(4, 8);
