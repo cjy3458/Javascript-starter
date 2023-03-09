@@ -22,4 +22,5 @@ player.points = 85;
 console.log(player["points"]);
 player.last = "Young";
 console.log(player);
-
+player.points = player.points + 15;
+console.log(player.points);

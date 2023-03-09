@@ -11,7 +11,8 @@ isNaN(typeof age); /*NaN인지 아닌지 확인하는 과정*/
 if(isNaN(age)) {
     alert("Write the Number!");
 } else if(age < 18){
-    alert("You are yoo young...");
-} else {
+    alert("You are too young...");
+} else if(age >= 18 && age <= 50){
     alert("You can Smoke!");
 }
+
