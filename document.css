@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(151, 169, 222);
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+.active {
+    color: tomato;
+}
