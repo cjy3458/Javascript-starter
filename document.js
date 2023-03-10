@@ -24,6 +24,8 @@ function handClick() {
     alert("title clicked");
     title.style.color = "blue";
 }
+
+title2.onclick = handClick; /*더 간결*/
 title2.addEventListener("click", handClick);
 
 
@@ -34,3 +36,12 @@ function handleMouse() {
 }
 
 title2.addEventListener("mouseenter", handleMouse);
+
+
+/*window 이벤트*/
+function handleSize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+
+window.addEventListener("resize", handleSize);
