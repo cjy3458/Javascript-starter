@@ -13,4 +13,24 @@ const title3 = document.querySelectorAll(".hello h1")/*모든 h1*/
 
 /*그냥 요소 접근할 때는 querySelector가 제일 좋다고 생각해 */
 
+
+/*스타일 바꾸는 이벤트 */
 title2.style.color = "rosybrown";
+
+
+/*클릭 시에 생기는 이벤트  */
+
+function handClick() {
+    alert("title clicked");
+    title.style.color = "blue";
+}
+title2.addEventListener("click", handClick);
+
+
+/*마우스를 올려놓으면 생기는 이벤트 */
+
+function handleMouse() {
+    alert("entered");
+}
+
+title2.addEventListener("mouseenter", handleMouse);
