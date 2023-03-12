@@ -1,3 +1,13 @@
 const loginForm = document.querySelector(".login-form");
-const loginput = loginForm.querySelector("input");
-const loginButton = loginForm.querySelector("button");
+const logInput = loginForm.querySelector(".login-form input");
+const loginButton = loginForm.querySelector(".login-form button");
+
+
+
+
+function loginSubmit(event){
+    event.preventDefault();
+}
+
+
+loginForm.submit = loginSubmit;
