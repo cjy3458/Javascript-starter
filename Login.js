@@ -1,15 +1,15 @@
-const loginForm = document.querySelector(".login-form");
-const logInput = loginForm.querySelector(".login-form input");
-const loginButton = loginForm.querySelector(".login-form button");
+const loginForm = document.querySelector("#login-form");
+const logInput = loginForm.querySelector("#login-form input");
+const loginButton = loginForm.querySelector("#login-form button");
 const link = document.querySelector("a");
 const greet = document.querySelector("#greeting");
 const hidden_class = "hidden";
 
 function loginSubmit(event){ /*submit이 됐을때 실행할 함수 */
     event.preventDefault(); /*먼저 기본 이벤트 제거 */
+    loginForm.classList.add(hidden_class); /*form에 hidden이라는 클래스 추가 */
     const userId = logInput.value;
     localStorage.setItem("Id", userId); /*로컬스토리지에 입력한 값을 id라는 키로 저장 */
-    loginForm.classList.add("hidden"); /*form에 hidden이라는 클래스 추가 */
     greeting(userId);
 }
 
