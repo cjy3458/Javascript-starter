@@ -23,8 +23,7 @@ function greeting(name){
 if(localId === null) { /*로컬스토리지에 입력한 id가 null이라면(없다면) */
     loginForm.classList.remove(hidden_class); /*hidden이라는 클래스를 제거해서 form을 보여준다*/
     loginForm.onsubmit = loginSubmit;
-} else {
+} else { 
     greeting(localId);
 }
 
-console.log(localId);
