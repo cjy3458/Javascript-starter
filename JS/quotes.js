@@ -43,3 +43,13 @@ const quotes = [
 
 
 const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+
+console.log(quotes[0]); /*Array안에 1번쨰 요소에 접근*/
+console.log(quotes[10-1]); /*Array안에 마지막 요소에 접근*/
+
+const nowQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = nowQuote.quote;
+author.innerText = nowQuote.author;
