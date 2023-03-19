@@ -2,8 +2,9 @@ const todoForm = document.querySelector("#todo-form");
 const todoList = document.querySelector("#todo-list");
 const todoInput = document.querySelector("#todo-form input");
 
-function deletTodo(){
-    console.log
+function deleteTodo(event){
+    const li = event.target.parentElement;
+    li.remove();
 }
 
 function printTodo(newTodo){
@@ -12,7 +13,7 @@ function printTodo(newTodo){
     span.innerText = newTodo;
     const button = document.createElement("button");
     button.innerText = "❌"
-    button.onclick = 
+    button.onclick = deleteTodo;
     list.appendChild(span);
     list.appendChild(button);
     span.innerText = newTodo;
