@@ -1,6 +1,12 @@
 const todoForm = document.querySelector("#todo-form");
 const todoList = document.querySelector("#todo-list");
 const todoInput = document.querySelector("#todo-form input");
+const toDos = [];
+
+
+function saveTodo(){
+    /*로컬스토리지에 할 일 목록을 저장하는 함수 */
+}
 
 function deleteTodo(event){
     const li = event.target.parentElement;
@@ -24,6 +30,7 @@ function todoSubmit(event) {
     event.preventDefault();
     const newTodo = todoInput.value;
     todoInput.value = "";
+    toDos.push(newTodo);
     printTodo(newTodo);
 }
 
