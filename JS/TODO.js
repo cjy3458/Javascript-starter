@@ -5,7 +5,7 @@ const toDos = [];
 
 
 function saveTodo(){
-    /*로컬스토리지에 할 일 목록을 저장하는 함수 */
+    localStorage.setItem("todos", toDos)
 }
 
 function deleteTodo(event){
