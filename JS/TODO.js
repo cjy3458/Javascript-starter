@@ -6,6 +6,7 @@ let toDos = [];
 
 function saveTodo(){
     localStorage.setItem("todos", JSON.stringify(toDos));
+    /*현재 로컬스토리지의 저장이 안되서 새로고침하면 내 입력값이 사라짐 */
 }
 
 function deleteTodo(event){
