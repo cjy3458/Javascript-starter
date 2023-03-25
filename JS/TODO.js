@@ -43,7 +43,7 @@ const savedTodo = localStorage.getItem("todos");
 if(savedTodo !== null){
     const parsedTodo = JSON.parse(saveTodo);
     toDos = parsedTodo;
-    parsedTodo.forEach(printTodo);
+    toDos.forEach(printTodo); /*여기가 문제인거 같은데 안돼  */
         /*array에 각 요소마다 함수를 실행시켜주는 forEach */
 
 
