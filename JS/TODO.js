@@ -19,7 +19,7 @@ function printTodo(newTodo){
     const span = document.createElement("span");
     span.innerText = newTodo;
     const button = document.createElement("button");
-    button.innerText = "❌"
+    button.innerText = "❌";
     button.onclick = deleteTodo;
     list.appendChild(span);
     list.appendChild(button);
