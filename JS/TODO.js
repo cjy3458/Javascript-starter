@@ -11,18 +11,20 @@ function saveTodo() {
 function deleteTodo(event) {
   const li = event.target.parentElement;
   li.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveTodo();
 }
 
 function printTodo(newTodo) {
   const list = document.createElement("li");
+  list.id = newTodo.id;
   const span = document.createElement("span");
-  span.innerText = newTodo;
+  span.innerText = newTodo.text;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.onclick = deleteTodo;
   list.appendChild(span);
   list.appendChild(button);
-  span.innerText = newTodo;
   todoList.appendChild(list);
 }
 
@@ -30,8 +32,9 @@ function todoSubmit(event) {
   event.preventDefault();
   const newTodo = todoInput.value;
   todoInput.value = "";
-  toDos.push(newTodo);
-  printTodo(newTodo);
+  const newTodoObj = { text: newTodo, id: Date.now() };
+  toDos.push(newTodoObj);
+  printTodo(newTodoObj);
   saveTodo();
 }
 
